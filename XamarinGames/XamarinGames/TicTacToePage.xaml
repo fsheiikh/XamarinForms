@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinGames.TicTacToePage"
+             BackgroundColor="Silver">
+
+
+
+    <Grid BackgroundColor="Silver" Margin="30,120,30,120">
+        <Button BackgroundColor="Yellow" Grid.Row="0" Grid.Column="0" Clicked="clickedButton" ClassId="0" x:Name="btn1"/>
+        <Button BackgroundColor="Yellow" Grid.Row="0" Grid.Column="1" Clicked="clickedButton" ClassId="1" x:Name="btn2"/>
+        <Button BackgroundColor="Yellow" Grid.Row="0" Grid.Column="2" Clicked="clickedButton" ClassId="2" x:Name="btn3"/>
+
+        <Button BackgroundColor="Yellow" Grid.Row="1" Grid.Column="0" Clicked="clickedButton" ClassId="3" x:Name="btn4"/>
+        <Button BackgroundColor="Yellow" Grid.Row="1" Grid.Column="1" Clicked="clickedButton" ClassId="4" x:Name="btn5"/>
+        <Button BackgroundColor="Yellow" Grid.Row="1" Grid.Column="2" Clicked="clickedButton" ClassId="5" x:Name="btn6"/>
+
+        <Button BackgroundColor="Yellow" Grid.Row="2" Grid.Column="0" Clicked="clickedButton" ClassId="6" x:Name="btn7"/>
+        <Button BackgroundColor="Yellow" Grid.Row="2" Grid.Column="1" Clicked="clickedButton" ClassId="7" x:Name="btn8"/>
+        <Button BackgroundColor="Yellow" Grid.Row="2" Grid.Column="2" Clicked="clickedButton" ClassId="8" x:Name="btn9"/>
+    </Grid>
+</ContentPage>

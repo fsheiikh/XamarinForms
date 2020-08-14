@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinGames.RockPaperScissorsPage">
+   <StackLayout Margin="10,20,10,10">
+       <Label Text="Rock Paper Scissors Game"
+              TextColor="Gray"
+              HorizontalOptions="Center"/>
+
+       <StackLayout Orientation="Horizontal"
+                    Spacing="40"
+                    HorizontalOptions="Center"
+                    Margin="0,200,0,0">
+
+           <Label Text="Player1"
+                  TextColor="Blue"
+                  x:Name="lblPlayer1"/>
+
+           <Label Text="Player2"
+                  TextColor="Red"
+                  x:Name="lblPlayer2"/>
+       </StackLayout>
+
+       <Label Text="_" HorizontalOptions="Center" x:Name="lblDisplay"/>
+
+       <StackLayout Orientation="Horizontal"
+                    Spacing="10"
+                    HorizontalOptions="Center"
+                    Margin="0,120,0,0">
+
+           <Button Text="Rock"
+                   BorderColor="Gray"
+                   BackgroundColor="LightGray"
+                   TextColor="Black"
+                   WidthRequest="90"
+                   Clicked="RPCButtonClicked"/>
+
+           <Button Text="Paper"
+                   BorderColor="Gray"
+                   BackgroundColor="LightGray"
+                   TextColor="Black"
+                   WidthRequest="90"
+                   Clicked="RPCButtonClicked"/>
+
+           <Button Text="Scissors"
+                    BorderColor="Gray"
+                   BackgroundColor="LightGray"
+                   TextColor="Black"
+                   WidthRequest="90"
+                   Clicked="RPCButtonClicked"/>
+
+       </StackLayout>
+   </StackLayout>
+</ContentPage>

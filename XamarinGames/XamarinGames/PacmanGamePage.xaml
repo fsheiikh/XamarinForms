@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinGames.PacmanGamePage"
+             BackgroundColor="black">
+    <StackLayout>
+
+        <StackLayout HeightRequest="400" BackgroundColor="Black">
+            <Grid ColumnSpacing="1" RowSpacing="1" x:Name="gameGrid">
+                <!--<Image Grid.Row="0" Grid.Column="0" BackgroundColor="yellow" HeightRequest="25"/>-->
+            </Grid>
+
+
+        </StackLayout>
+        <StackLayout HeightRequest="200" BackgroundColor="plum">
+            <Button Text="⇧" BackgroundColor="gold" FontAttributes="Bold" FontSize="Title"
+                    TextColor="White"
+                    Margin="80,0,80,0"
+                    ClassId="UP"
+                    Clicked="btnClicked"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Button Text="⇦" BackgroundColor="lightskyblue" WidthRequest="100" FontSize="Title"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        ClassId="LEFT"
+                        Clicked="btnClicked"/>
+
+                <Button Text="⇨" BackgroundColor="darksalmon" WidthRequest="100" FontSize="Title"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        ClassId="RIGHT"
+                        Clicked="btnClicked"/>
+
+            </StackLayout>
+            <Button Text="⇩" BackgroundColor="lightgreen" FontAttributes="Bold" FontSize="Title"
+                    TextColor="White"
+                    Margin="80,0,80,0"
+                    ClassId="DOWN"
+                    Clicked="btnClicked"/>
+            <Label Text="Score: " HorizontalOptions="EndAndExpand" Margin="0,-5,0,0"
+                   TextColor="White" x:Name="lblScore"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

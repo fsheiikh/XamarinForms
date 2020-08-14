@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinGames.AnimationPractice">
+
+    <StackLayout Margin="20,20,20,20">
+
+        <StackLayout BackgroundColor="Yellow" HeightRequest="300" x:Name="stackLayout">
+            <BoxView
+                 x:Name="boxView"
+                 HorizontalOptions="Center"
+                 CornerRadius="10"
+                 Color="blue"
+                 BindingContext="{x:Reference slider}"
+                 HeightRequest="{Binding Value}"
+                 WidthRequest="{Binding Value}"
+                />
+            <Slider Maximum="30" x:Name="slider"/>
+        </StackLayout>
+
+        <StackLayout BackgroundColor="Orange">
+            <Grid>
+                <Button Grid.Row="0" Grid.Column="0" Text="Down" Clicked="btnDown"/>
+                <Button Grid.Row="1" Grid.Column="0" Text="Left" Clicked="btnLeft"/>
+                <Button Grid.Row="2" Grid.Column="0" Text="Up" Clicked="btnUp"/>
+
+                <Button Grid.Row="0" Grid.Column="1" Text="Bigger" Clicked="btnBig"/>
+                <Button Grid.Row="1" Grid.Column="1" Text="Smaller" Clicked="btnSmall"/>
+                <Button Grid.Row="2" Grid.Column="1" Text="Rotate" Clicked="btnRotate"/>
+
+                <Button Grid.Row="0" Grid.Column="2" Text="Fade" Clicked="btnFade"/>
+                <Button Grid.Row="1" Grid.Column="2" Text="Add" Clicked="btnAdd"/>
+                <Button Grid.Row="2" Grid.Column="2" Text="Animate" Clicked="btnAnimate"/>
+            </Grid>
+
+        </StackLayout>
+        
+
+    </StackLayout>
+</ContentPage>

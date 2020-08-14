@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MyMasterDetailPage.xaml.cs" />
+    <Compile Remove="MyMasterDetailPageMenuItem.cs" />
+    <Compile Remove="ShellSample.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\apple.png" />
+    <None Remove="Images\ghost.gif" />
+    <None Remove="Images\pacman.png" />
+    <None Remove="Images\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\apple.png" />
+    <EmbeddedResource Include="Images\ghost.png">
+      <LogicalName>ghost.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\pacman.png">
+      <LogicalName>pacman.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\coin.png">
+      <LogicalName>coin.png</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

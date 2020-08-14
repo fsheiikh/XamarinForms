@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TestApp.SliderGamePage">
+    <StackLayout >
+   <StackLayout >     
+<BoxView BackgroundColor="Red"
+                 CornerRadius="10"
+                 WidthRequest="100"
+                 HeightRequest="20"
+                 VerticalOptions="StartAndExpand"
+                 HorizontalOptions="Center"
+                 x:Name="dotView2"/>
+
+              <BoxView BackgroundColor="Green"
+                 WidthRequest="100"
+                 HeightRequest="20"
+                 VerticalOptions="StartAndExpand"
+                 HorizontalOptions="StartAndExpand"
+                 x:Name="dotView1"/>
+
+                 <BoxView BackgroundColor="Blue"
+                 WidthRequest="100"
+                 HeightRequest="20"
+                 VerticalOptions="StartAndExpand"
+                 HorizontalOptions="Center"
+                 x:Name="dotView3"/>
+
+            <BoxView BackgroundColor="Green"
+                 WidthRequest="100"
+                 HeightRequest="20"
+                 VerticalOptions="StartAndExpand"
+                 HorizontalOptions="Center"
+                 x:Name="dotView4"/>
+
+              <BoxView BackgroundColor="Blue"
+                 WidthRequest="100"
+                 HeightRequest="20"
+                 VerticalOptions="EndAndExpand"
+                 HorizontalOptions="StartAndExpand"
+                 x:Name="dotView5"/>
+
+                 <BoxView BackgroundColor="Red"
+                 WidthRequest="100"
+                 HeightRequest="20"
+                 VerticalOptions="StartAndExpand"
+                 HorizontalOptions="Center"
+                 x:Name="dotView6"/>
+
+  </StackLayout >
+        
+        <BoxView BackgroundColor="Blue"
+                 CornerRadius="10"
+                 WidthRequest="20"
+                 HeightRequest="20"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 x:Name="dotView"/>
+            <Slider Maximum="200" ValueChanged="SliderChanged" Margin="50,0,50,0" />
+            <Label Text="" x:Name="lblDisplay"/>
+       
+    </StackLayout>
+</ContentPage>

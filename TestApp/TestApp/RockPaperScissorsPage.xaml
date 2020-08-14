@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp.RockPaperScissorsPage">
+
+    <StackLayout Margin="10,10,10,10">
+        <Label Text="Rock Paper Scissors Game"
+               Margin="0,20,0,0"
+               TextColor="Gray"
+               FontSize="Subtitle"
+               HorizontalOptions="Center"/>
+
+         <StackLayout Orientation="Horizontal"
+                      Spacing="40"
+                      HorizontalOptions="Center"
+                      Margin="0,200,0,0">
+
+             <Label Text="Player1"
+                    TextColor="Blue"
+                     x:Name="player1"/>
+
+             <Label Text="Player2"
+                    TextColor="Red"
+                    x:Name="player2"/>
+
+
+        </StackLayout>
+
+        <!--AddLater-->
+        <Label Text="_"
+               HorizontalOptions="Center"
+               x:Name="lblDisplay"/>
+        <!--AddLater-->
+
+        <StackLayout Orientation="Horizontal"
+                      Spacing="10"
+                      HorizontalOptions="Center"
+                      Margin="0,120,0,0">
+
+            <Button Text="Rock"
+                    BorderColor="Gray"
+                    BorderWidth="1"
+                    BackgroundColor="LightGray"
+                    TextColor="Black"
+                    WidthRequest="90"
+                    Clicked="RPCButtonClicked"/>
+
+            <Button Text="Paper"  BorderColor="Gray"
+                    BorderWidth="1"
+                    BackgroundColor="LightGray"
+                    TextColor="Black"
+                    WidthRequest="90"
+                    Clicked="RPCButtonClicked"/>
+
+            <Button Text="Scissors"
+                    BorderColor="Gray"
+                    BorderWidth="1"
+                    BackgroundColor="LightGray"
+                    TextColor="Black"
+                    WidthRequest="90"
+                    Clicked="RPCButtonClicked"/>
+
+
+        </StackLayout>
+               
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{88ABA7A1-949F-43AC-9C33-BFBAF84823C2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinGames/PacmanGamePage.xaml.cs">
+    <Files>
+      <File FileName="XamarinGames/GameLandingPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="XamarinGames/GameLandingPage.xaml" />
+      <File FileName="XamarinGames/PacmanGamePage.xaml" />
+      <File FileName="XamarinGames/PacmanGamePage.xaml.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XamarinGamesSolution" expanded="True">
+            <Node name="XamarinGames" expanded="True">
+              <Node name="GameLandingPage.xaml" expanded="True" />
+              <Node name="PacmanGamePage.xaml" expanded="True">
+                <Node name="PacmanGamePage.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.XamarinGames.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.57491AA4-94C2-40A6-9336-06047B97AE05" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.XamarinGames.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.nexus_4_test" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

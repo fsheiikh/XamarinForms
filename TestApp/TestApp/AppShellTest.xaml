@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp.AppShell">
+     <FlyoutItem Title="Animals"
+                FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Domestic"
+             Icon="paw.png">
+            <ShellContent Title="Cats"
+                          Icon="cat.png">
+              
+            </ShellContent>
+            <ShellContent Title="Dogs"
+                          Icon="dog.png">
+                
+            </ShellContent>
+        </Tab>
+        <!--<ShellContent Title="Monkeys"
+                      Icon="monkey.png">
+           
+        </ShellContent>
+        <ShellContent Title="Elephants"
+                      Icon="elephant.png">  
+          
+        </ShellContent>
+        <ShellContent Title="Bears"
+                      Icon="bear.png">
+          
+        </ShellContent>-->
+    </FlyoutItem>
+</Shell>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:XamarinGames"
+            x:Class="XamarinGames.GameLandingPage">
+    <ScrollView>
+        <FlexLayout Direction="Column"
+                    AlignItems="Center"
+                    JustifyContent="Center">
+            <Frame WidthRequest="300" HeightRequest="480">
+                <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                    <Label Text="Rock Paper Scissors"
+                           HorizontalTextAlignment="Center"/>
+                    <Image Source="https://tinyurl.com/y67qw8k2"/>
+                    <Button Text="Play"
+                            ClassId="0"
+                            Clicked="btnClick"/>
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300" HeightRequest="480">
+                <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                    <Label Text="Tic Tac Toe"
+                           HorizontalTextAlignment="Center"/>
+                    <Image Source="https://tinyurl.com/yxsaf592"/>
+                    <Button Text="Play"
+                            ClassId="1"
+                            Clicked="btnClick" />
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300" HeightRequest="480">
+                <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                    <Label Text="Memory Puzzle"
+                           HorizontalTextAlignment="Center"/>
+                    <Image Source="https://tinyurl.com/y3d85pvg"/>
+                    <Button Text="Play"
+                            ClassId="2"
+                            Clicked="btnClick" />
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300" HeightRequest="480">
+                <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                    <Label Text="Animation Practice"
+                           HorizontalTextAlignment="Center"/>
+                    <Image Source="https://tinyurl.com/y4dotf5b"/>
+                    <Button Text="Play"
+                            ClassId="3"
+                            Clicked="btnClick"/>
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300" HeightRequest="480">
+                <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                    <Label Text="Pacman"
+                           HorizontalTextAlignment="Center"/>
+                    <Image Source="https://tinyurl.com/y3tb4976"/>
+                    <Button Text="Play"
+                            ClassId="4"
+                            Clicked="btnClick" />
+                </FlexLayout>
+            </Frame>
+        </FlexLayout>
+
+    </ScrollView>
+</ContentPage>

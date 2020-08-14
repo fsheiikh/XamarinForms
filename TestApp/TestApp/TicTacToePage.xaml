@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Silver"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp.TicTacToePage">
+
+    <Grid BackgroundColor="Silver" Margin="30,120,30,120">
+
+        <!--First, have labels first and then later chnage to buttons-->
+        <Button BackgroundColor="yellow" Grid.Row="0" Grid.Column="0" Clicked="clickedBtn" ClassId="0" x:Name="btn1"/>
+        <Button BackgroundColor="yellow" Grid.Row="0" Grid.Column="1" Clicked="clickedBtn" ClassId="1" x:Name="btn2"/>
+        <Button BackgroundColor="yellow" Grid.Row="0" Grid.Column="2" Clicked="clickedBtn" ClassId="2" x:Name="btn3"/>
+
+        <Button BackgroundColor="yellow" Grid.Row="1" Grid.Column="0" Clicked ="clickedBtn" ClassId="3" x:Name="btn4"/>
+        <Button BackgroundColor="yellow" Grid.Row="1" Grid.Column="1" Clicked="clickedBtn" ClassId="4" x:Name="btn5"/>
+        <Button BackgroundColor="yellow" Grid.Row="1" Grid.Column="2" Clicked="clickedBtn" ClassId="5" x:Name="btn6"/>
+
+        <Button BackgroundColor="yellow" Grid.Row="2" Grid.Column="0" Clicked="clickedBtn" ClassId="6" x:Name="btn7"/>
+        <Button BackgroundColor="yellow" Grid.Row="2" Grid.Column="1" Clicked="clickedBtn" ClassId="7" x:Name="btn8"/>
+        <Button BackgroundColor="yellow" Grid.Row="2" Grid.Column="2" Clicked="clickedBtn" ClassId="8" x:Name="btn9"/>
+
+
+        <!--Second-->
+        <!--<Label Grid.Row="3" Grid.ColumnSpan="3" Text="___" BackgroundColor="gray" x:Name="lblDisplay"/>-->
+        
+    </Grid>
+
+</ContentPage>
+
+
+
+
+
+
+
+
+
+

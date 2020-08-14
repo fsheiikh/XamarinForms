@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:TestApp"
+            x:Class="TestApp.GameLandinPage">
+
+
+    <ScrollView>
+        <FlexLayout Direction="Column"
+                AlignItems="Center"
+                JustifyContent="Center">
+
+            <Frame WidthRequest="300" HeightRequest="480">
+                <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                    <Label Text="Rock Paper Scissors"
+                           FlexLayout.Grow="9"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Image Source="https://tinyurl.com/y67qw8k2"/>
+                    <Button Text="Play" FlexLayout.Grow="1"
+                            ClassId="0"
+                            Clicked="btnClicked"/>
+                    <!--have bg color on button and label--> 
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300" HeightRequest="480" >
+                <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                    <Label Text="Memory Puzzle"
+                           HorizontalTextAlignment="Center"/>
+                    <Image Source="https://tinyurl.com/y3d85pvg"/>
+                    <Button Text="Play"
+                            ClassId="1"
+                            Clicked="btnClicked"/>
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300" HeightRequest="480">
+                <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                    <Label Text="Tic Tac Toe"
+                           HorizontalTextAlignment="Center"/>
+                    <Image Source="https://tinyurl.com/yxsaf592"/>
+                    <Button Text="Play"
+                            ClassId="2"
+                            Clicked="btnClicked" />
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300" HeightRequest="480">
+                <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                    <Label Text="Animation"
+                           HorizontalTextAlignment="Center"/>
+                     <Image Source="https://tinyurl.com/y4dotf5b"/>
+                    <Button Text="Play"
+                            ClassId="3"
+                            Clicked="btnClicked"/>
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300" HeightRequest="480">
+                <FlexLayout Direction="Column" JustifyContent="SpaceBetween">
+                    <Label Text="Pacman"
+                           HorizontalTextAlignment="Center"/>
+                     <Image Source="https://tinyurl.com/y3tb4976"/>
+                    <Button Text="Play"
+                            ClassId="4"
+                            Clicked="btnClicked"/>
+                </FlexLayout>
+            </Frame>
+
+
+        </FlexLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+    <!--add attr to flexlayout after all children are added
+    <FlexLayout Direction="Column"
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly">
+        <Label Text="Games Landing Page Header"/>
+
+        <BoxView Color="Blue"
+                 HeightRequest="30"
+                 WidthRequest="30"
+                 CornerRadius="15"/>
+
+        <Button Text="Click" />
+        <Label Text="Games Landing Page Bottom"/>
+    </FlexLayout>-->
+
+
+
+</ContentPage>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp.PacmanPage"
+             BackgroundColor="black">
+    <StackLayout>
+
+        <!--main game-->
+        <!--a-->
+        <StackLayout BackgroundColor="black"
+                     HeightRequest="400">
+            <Grid RowSpacing="1" ColumnSpacing="1" x:Name="gameGrid">
+                <!--<Image Grid.Row="0" Grid.Column="0" BackgroundColor="yellow" HeightRequest="25"/>
+                <Image Grid.Row="0" Grid.Column="1" BackgroundColor="yellow"/>
+                <Image Grid.Row="0" Grid.Column="2" BackgroundColor="yellow"/>
+                <Image Grid.Row="0" Grid.Column="3" BackgroundColor="yellow" />
+                <Image Grid.Row="0" Grid.Column="4" BackgroundColor="yellow"/>
+                <Image Grid.Row="0" Grid.Column="5" BackgroundColor="yellow"/>
+                <Image Grid.Row="0" Grid.Column="6" BackgroundColor="yellow" />
+                <Image Grid.Row="0" Grid.Column="7" BackgroundColor="yellow"/>
+                <Image Grid.Row="0" Grid.Column="8" BackgroundColor="yellow"/>
+                <Image Grid.Row="0" Grid.Column="9" BackgroundColor="yellow"/>
+                <Image Grid.Row="0" Grid.Column="10" BackgroundColor="yellow"/>
+
+                <Image Grid.Row="1" Grid.Column="0" BackgroundColor="yellow" HeightRequest="25"/>
+                <Image Grid.Row="1" Grid.Column="1" BackgroundColor="yellow"/>
+                <Image Grid.Row="1" Grid.Column="2" BackgroundColor="yellow"/>
+                <Image Grid.Row="1" Grid.Column="3" BackgroundColor="yellow" />
+                <Image Grid.Row="1" Grid.Column="4" BackgroundColor="yellow"/>
+                <Image Grid.Row="1" Grid.Column="5" BackgroundColor="yellow"/>
+                <Image Grid.Row="1" Grid.Column="6" BackgroundColor="yellow" />
+                <Image Grid.Row="1" Grid.Column="7" BackgroundColor="yellow"/>
+                <Image Grid.Row="1" Grid.Column="8" BackgroundColor="yellow"/>
+                <Image Grid.Row="1" Grid.Column="9" BackgroundColor="yellow"/>
+                <Image Grid.Row="1" Grid.Column="10" BackgroundColor="yellow"/>
+
+                <Image Grid.Row="2" Grid.Column="0" BackgroundColor="yellow" HeightRequest="25"/>
+                <Image Grid.Row="2" Grid.Column="1" BackgroundColor="yellow"/>
+                <Image Grid.Row="2" Grid.Column="2" BackgroundColor="yellow"/>
+                <Image Grid.Row="2" Grid.Column="3" BackgroundColor="yellow" />
+                <Image Grid.Row="2" Grid.Column="4" BackgroundColor="yellow"/>
+                <Image Grid.Row="2" Grid.Column="5" BackgroundColor="yellow"/>
+                <Image Grid.Row="2" Grid.Column="6" BackgroundColor="yellow" />
+                <Image Grid.Row="2" Grid.Column="7" BackgroundColor="yellow"/>
+                <Image Grid.Row="2" Grid.Column="8" BackgroundColor="yellow"/>
+                <Image Grid.Row="2" Grid.Column="9" BackgroundColor="yellow"/>
+                <Image Grid.Row="2" Grid.Column="10" BackgroundColor="yellow"/>-->
+            </Grid>
+
+        </StackLayout>
+
+        <!--controller b-->
+        <!--Have words up first, then use arrow character--> 
+        <StackLayout BackgroundColor="plum" HeightRequest="200">
+             <Button Text="⇧"
+                     BackgroundColor="gold"
+                     Margin="80,0,80,0"
+                     Clicked="btnClick"
+                     ClassId="Up"
+                     FontAttributes="Bold"
+                     FontSize="Title"
+                     TextColor="white"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                <Button Text="⇦"
+                        BackgroundColor="lightskyblue"
+                        Margin="0,0,0,0"
+                        WidthRequest="100"
+                        Clicked="btnClick"
+                        ClassId="Left"
+                        FontAttributes="Bold"
+                        FontSize="Title"
+                        TextColor="white"/>
+
+                <Button Text="⇨"
+                        BackgroundColor="darksalmon"
+                        WidthRequest="100"
+                        Clicked="btnClick"
+                        ClassId="Right"
+                        FontAttributes="Bold"
+                        FontSize="Title"
+                        TextColor="white"/>
+                
+
+            </StackLayout>
+                <Button Text="⇩"
+                        BackgroundColor="lightgreen"
+                        Margin="80,0,80,0"
+                        Clicked="btnClick"
+                        ClassId="Down"
+                        FontAttributes="Bold"
+                        FontSize="Title"
+                        TextColor="white"/>
+
+                <Label Text="Score: "
+                       HorizontalOptions="EndAndExpand"
+                       Margin="0,-5,0,0"
+                       TextColor="white"
+                       x:Name="lblScore"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TestApp.MemoryPuzzlePage">
+    <Grid Margin="20,100,20,100" x:Name="gameGrid">
+        <Image BackgroundColor="gray" Grid.Row="0" Grid.Column="0" x:Name="img1"/>
+        <Image BackgroundColor="gray" Grid.Row="0" Grid.Column="1" x:Name="img2"/>
+        <Image BackgroundColor="gray" Grid.Row="0" Grid.Column="2" x:Name="img3"/>
+        <Image BackgroundColor="gray" Grid.Row="0" Grid.Column="3" x:Name="img4"/>
+
+
+        <Image BackgroundColor="gray" Grid.Row="1" Grid.Column="0" x:Name="img5"/>
+        <Image BackgroundColor="gray" Grid.Row="1" Grid.Column="1" x:Name="img6"/>
+        <Image BackgroundColor="gray" Grid.Row="1" Grid.Column="2" x:Name="img7"/>
+        <Image BackgroundColor="gray" Grid.Row="1" Grid.Column="3" x:Name="img8"/>
+
+        <Image BackgroundColor="gray" Grid.Row="2" Grid.Column="0" x:Name="img9"/>
+        <Image BackgroundColor="gray" Grid.Row="2" Grid.Column="1" x:Name="img10"/>
+        <Image BackgroundColor="gray" Grid.Row="2" Grid.Column="2" x:Name="img11"/>
+        <Image BackgroundColor="gray" Grid.Row="2" Grid.Column="3" x:Name="img12"/>
+
+        <Image BackgroundColor="gray" Grid.Row="3" Grid.Column="0" x:Name="img13"/>
+        <Image BackgroundColor="gray" Grid.Row="3" Grid.Column="1" x:Name="img14"/>
+        <Image BackgroundColor="gray" Grid.Row="3" Grid.Column="2" x:Name="img15"/>
+        <Image  Grid.Row="3" Grid.Column="3" x:Name="img16"/>
+
+         <Label BackgroundColor="gray" Grid.Row="4" Grid.ColumnSpan="4" x:Name="lblDisplay"/>
+
+
+        <!--5a-->
+        <Switch Grid.Row="4" Grid.Column="3"
+                IsToggled="true" Margin="15"
+                x:Name="switch1" Toggled="OnToggle"/>
+        <!--5a end-->
+
+        <!--5c
+        remove the gray backgound from images
+        end 5c-->
+
+    </Grid>
+
+
+</ContentPage>

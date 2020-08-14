@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp.AnimationPage">
+    <!--18-->
+    <!--<Label Text="Animation Page"/>-->
+
+    <!--20-->
+    <StackLayout Margin="20,20,20,20" >
+        <!--21
+        <BoxView HeightRequest="20" WidthRequest="20" Color="blue"/>
+        <Slider Maximum="10"/>-->
+
+        <!--22, stacklayout in step 23-->
+        <StackLayout BackgroundColor="yellow" HeightRequest="300" x:Name="stackL">
+            <!--HeightRequest="20"
+            WidthRequest="20" and cornerradius 20 for below, no binding context until step 28 -->
+            <BoxView
+                x:Name="boxView"
+                 HorizontalOptions="Center"
+                 Color="blue"
+                 CornerRadius="10"
+                 BindingContext="{x:Reference slider}"
+                 HeightRequest="{Binding Value}"
+                 WidthRequest="{Binding Value}"
+                 />
+
+            <Slider Maximum="30" x:Name="slider"/>
+            <!--24, remove in step 29-->
+            <!--<Label BindingContext="{x:Reference slider}" Text="{Binding Value}"/>-->
+        </StackLayout>
+
+        <!--25-->
+        <StackLayout BackgroundColor="orange" MinimumHeightRequest="100">
+            <!--26 add all button, 30+ steps are for text change and clicked-->
+            <Grid>
+                <!--30, add name and clicked to button-->
+                <Button Grid.Row="0" Grid.Column="0" Text="Down" Clicked="btnDown"/>
+                <!--32, add name and clciked to button-->
+                <Button Grid.Row="1" Grid.Column="0" Text="Left" Clicked="btnLeft"/>
+                <Button Grid.Row="2" Grid.Column="0" Text="Up" Clicked="btnUp"/>
+
+                <Button Grid.Row="0" Grid.Column="1" Text="Bigger" Clicked="btnBig"/>
+                <Button Grid.Row="1" Grid.Column="1" Text="Smaller" Clicked="btnSmall"/>
+                <Button Grid.Row="2" Grid.Column="1" Text="Rotate" Clicked="btnRotate"/>
+
+                <Button Grid.Row="0" Grid.Column="2" Text="Fade" Clicked="btnFade"/>
+                <Button Grid.Row="1" Grid.Column="2" Text="Add" Clicked="btnAdd"/>
+                <Button Grid.Row="2" Grid.Column="2" Text="Animate All" Clicked="btnAnimate"/>
+            </Grid>
+
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>

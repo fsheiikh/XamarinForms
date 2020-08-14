@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\apple.png" />
+    <None Remove="Images\avocado.png" />
+    <None Remove="Images\banana.png" />
+    <None Remove="Images\berry.png" />
+    <None Remove="Images\grapes.png" />
+    <None Remove="Images\lemon.png" />
+    <None Remove="Images\melon.png" />
+    <None Remove="Images\orange.png" />
+    <None Remove="Images\pacman.png" />
+    <None Remove="Images\coin.png" />
+    <None Remove="Images\ghost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\apple.png" />
+    <EmbeddedResource Include="Images\avocado.png" />
+    <EmbeddedResource Include="Images\banana.png" />
+    <EmbeddedResource Include="Images\berry.png" />
+    <EmbeddedResource Include="Images\grapes.png" />
+    <EmbeddedResource Include="Images\lemon.png" />
+    <EmbeddedResource Include="Images\melon.png" />
+    <EmbeddedResource Include="Images\orange.png" />
+    <EmbeddedResource Include="Images\pacman.png">
+      <LogicalName>pacman.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\coin.png">
+      <LogicalName>coin.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\ghost.png">
+      <LogicalName>ghost.png</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
